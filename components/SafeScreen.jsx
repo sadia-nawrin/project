@@ -1,24 +1,18 @@
 
+import { View } from 'react-native';
+import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { COLORS } from "@/constants/colors";
 
-// import { View, Text } from 'react-native'
+const SafeScreen = ({ children }) => {
+  const insets = useSafeAreaInsets();
 
-// import { useSafeAreaInsets } from "react-native-safe-area-context";
+  return (
+    <View style={{ paddingTop: insets.top, flex: 1, backgroundColor: COLORS.background }}>
+      {children}
+    </View>
+  );
+};
 
-// import {COLORS} from "@/constants/colors"
+export default SafeScreen;
 
 
-
-// const SafeScreen = ({children}) => {
-
-//   const insets=useSafeAreaInsets();
-
-//   return (
-//     <View style={{paddingTop:insets.top, flex:1, backgroundColor: COLORS.background}}>
-
-//       {children}
-
-//     </View>
-//   )
-// }
-
-// export default SafeScreen;

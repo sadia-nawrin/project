@@ -10,9 +10,10 @@ export const styles = StyleSheet.create({
     justifyContent: "center",
   },
   illustration: {
-    width: "100%",
-    height: 310,
+    width: "300",
+    height: 400,
     resizeMode: "contain",
+    
   },
   title: {
     fontSize: 32,
@@ -57,7 +58,7 @@ export const styles = StyleSheet.create({
     color: COLORS.text,
     fontSize: 16,
   },
-  linkText: {
+  LinkText: {
     color: COLORS.primary,
     fontSize: 16,
     fontWeight: "600",
